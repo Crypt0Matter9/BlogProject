@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Quicksand, sans-serif;
+    font-size: 20px;
+    color: black;
+
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-rows: 50px 1fr 1fr 100px;
+    justify-content: center;
+
+    grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr);
+    
+    grid-gap: 30px;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+.container div {
+    padding: 5px;
+    border-style: outset;
+    border: 5px black; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.header {
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+}
+
+.container-large {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container-large {
+    background-image: url(../img.jpg/crypto1.jpg);
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+    color: white;
+    text-align: center;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-decoration-color: darkgray;
+    text-align: center;
+}
+
+.container-small {
+    background-image: url(../img.jpg/ion.jpg);
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+.container-last {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-start: 3;
+}
+
+.container-last {
+    background-image: url(../img.jpg/token.jpeg);
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+.container-medium {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.container-medium {
+    background-color: gray;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer {
+    grid-column: 1 / span 3;
+    background-image: url(../img.jpg/galaxy2.jpg);
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+    text-align: center;
+}
+  

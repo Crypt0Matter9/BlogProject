@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-image: url(../img.jpg/diamond.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;   
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Quicksand, sans-serif;
+    font-size: 20px;
+    color: white;
+
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-rows: 50px 1fr 1fr 100px;
+    justify-content: center;
+
+    grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr);
+    
+    grid-gap: 30px;
+    box-sizing: border-box;
+    border-color: white;
+}
+
+.container div {
+    padding: 5px;
+    border-style: outset;
+    border: 10px solid darkgrey; 
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.header {
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-large {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 3px color white;
+}
+
+.container-large {
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+    color: white;
+    text-align: center;
+    background-image: url(../img.jpg/ethwhale.jpg);
+    background-repeat: no-repeat;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-decoration-color: darkgray;
+    text-align: center;
+}
+
+.container-small {
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+    background-image: url(../img.jpg/bulls.jpg);
+}
+
+.container-last {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-start: 3;
+}
+
+.container-last {
+    background-size: cover;
+    background-image: url(..//img.jpg/graph.jpg);
+}
+
+.container-medium {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url(../img.jpg/coolG.jpg);
+    background-position: relative;;
+}
+
+.container-medium {
+    text-align: center;
+    font-size: 30px;
+}
+
+
